@@ -4,70 +4,82 @@ let ancho;
 let alto;
 
 const azulejos = [];
-const numA = 11; // número de azulejos
+const numA = 11; // Cantidad de baldosas
 
 const reglas = [
-  // Reglas de los bordes de cada azulejo
+  // COD DE LOS BORDES DE LOS TILES
+
+  // TILE #0 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 1,
     DOWN: 1,
     LEFT: 1,
   },
+  // TILE #1 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 1,
     DOWN: 0,
     LEFT: 0,
   },
+  // TILE #2 _____________________________________________________________________
   {
     UP: 0,
     RIGHT: 1,
     DOWN: 0,
     LEFT: 1,
   },
+  // TILE #3 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 0,
     DOWN: 1,
     LEFT: 0,
   },
+  // TILE #4 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 1,
   },
+  // TILE #5 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 1,
     DOWN: 0,
     LEFT: 1,
   },
+  // TILE #6 _____________________________________________________________________
   {
     UP: 0,
     RIGHT: 0,
     DOWN: 1,
     LEFT: 1,
   },
+  // TILE #7 _____________________________________________________________________
   {
     UP: 0,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
+  // TILE #8 _____________________________________________________________________
   {
     UP: 0,
     RIGHT: 1,
     DOWN: 1,
     LEFT: 0,
   },
+  // TILE #9 _____________________________________________________________________
   {
     UP: 0,
     RIGHT: 1,
     DOWN: 1,
     LEFT: 1,
   },
+  // TILE #10 _____________________________________________________________________
   {
     UP: 1,
     RIGHT: 1,
@@ -137,7 +149,7 @@ function draw() {
       }
     }
 
-    // Actualizar las opciones de las celdas vecinas
+    // ACTUALIZAR LAS PIEZAS VECINAS
     for (let x = 0; x < RETICULA; x++) {
       for (let y = 0; y < RETICULA; y++) {
         const celdaIndex = x + y * RETICULA;
